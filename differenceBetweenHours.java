@@ -1,17 +1,17 @@
-//Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode 
-//começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas
+//Read the start time and end time of a game. Then calculate the duration of the game, knowing that it can 
+//start in one day and end in another, having a minimum duration of 1 hour and maximum of 24 hours.
 
 import java.util.Scanner;
 
 public class differenceBetweenHours {
     public static void main(String[] args) {
 
-        Scanner oli = new Scanner(System.in);
+        Scanner ale = new Scanner(System.in);
 
         System.out.println("Write the inicial time: ");
-        int inicialTime = oli.nextInt();
+        int inicialTime = ale.nextInt();
         System.out.println("write the final time: ");
-        int finalTime = oli.nextInt();
+        int finalTime = ale.nextInt();
 
         int time;
         if (inicialTime < finalTime) {
@@ -21,7 +21,7 @@ public class differenceBetweenHours {
         }
 
         System.out.println("The game had " + time + " hours");
-        oli.close();
+        ale.close();
     }
 
 }
